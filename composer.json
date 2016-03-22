@@ -52,5 +52,7 @@
 		"psr-4": {
 			"LeagueTests\\": "tests/unit/"
 		}
-	}
+	},
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
