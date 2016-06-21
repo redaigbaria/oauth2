@@ -43,6 +43,7 @@ class Bearer extends AbstractTokenType implements TokenTypeInterface
         }
 
         $header = $request->headers->get('Authorization');
+        $header = explode(',', $header)[0];
 
         if (substr($header, 0, 7) !== 'Bearer ') {
             return;
