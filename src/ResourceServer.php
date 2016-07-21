@@ -120,9 +120,9 @@ class ResourceServer extends AbstractServer
 
         // Check the access token hasn't expired
         // Ensure the auth code hasn't expired
-        if ($this->accessToken->isExpired() === true) {
+        /*if ($this->accessToken->isExpired() === true) {
             throw new AccessDeniedException();
-        }
+        }*/
 
         return true;
     }
